@@ -144,7 +144,7 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="USUARI_HorIniSab_b">Horario inicio</label>
-                            <input type="tiem" name="USUARI_HorIniSab_b" id="USUARI_HorIniSab_b" class="form-control">
+                            <input type="time" name="USUARI_HorIniSab_b" id="USUARI_HorIniSab_b" class="form-control">
                         </div>
                     </div>
                     <div class="col-md-6">

@@ -62,8 +62,8 @@ class UsuariController extends Controller
             'USUARI_Clave_____b' => $request->input('USUARI_Clave_____b'),
             'USUARI_Cargo_____b' => $request->input('USUARI_Cargo_____b'),
         ];
+
         //almacena la foto
-        var_dump($request->file('foto_upload'));
         if($logo = $request->file('foto_upload')){
             $filename = $logo->getClientOriginalName();
             $logo->move(public_path('images/logos'), $filename);
@@ -84,6 +84,44 @@ class UsuariController extends Controller
         if(null != ($request->input('USUARI_HorFinMar_b'))){
             $usuario['USUARI_HorFinMar_b'] = $request->input('USUARI_HorFinMar_b');
         }
+        if(null != ($request->input('USUARI_HorIniMie_b'))){
+            $usuario['USUARI_HorIniMie_b'] = $request->input('USUARI_HorIniMie_b');
+        }
+        if(null != ($request->input('USUARI_HorFinMie_b'))){
+            $usuario['USUARI_HorFinMie_b'] = $request->input('USUARI_HorFinMie_b');
+        }
+        if(null != ($request->input('USUARI_HorIniJue_b'))){
+            $usuario['USUARI_HorIniJue_b'] = $request->input('USUARI_HorIniJue_b');
+        }
+        if(null != ($request->input('USUARI_HorFinJue_b'))){
+            $usuario['USUARI_HorFinJue_b'] = $request->input('USUARI_HorFinJue_b');
+        }
+        if(null != ($request->input('USUARI_HorIniVie_b'))){
+            $usuario['USUARI_HorIniVie_b'] = $request->input('USUARI_HorIniVie_b');
+        }
+        if(null != ($request->input('USUARI_HorFinVie_b'))){
+            $usuario['USUARI_HorFinVie_b'] = $request->input('USUARI_HorFinVie_b');
+        }
+        if(null != ($request->input('USUARI_HorIniSab_b'))){
+            $usuario['USUARI_HorIniSab_b'] = $request->input('USUARI_HorIniSab_b');
+        }
+        if(null != ($request->input('USUARI_HorFinVie_b'))){
+            $usuario['USUARI_HorFinSab_b'] = $request->input('USUARI_HorFinSab_b');
+        }
+        if(null != ($request->input('USUARI_HorIniDom_b'))){
+            $usuario['USUARI_HorIniDom_b'] = $request->input('USUARI_HorIniDom_b');
+        }
+        if(null != ($request->input('USUARI_HorFinDom_b'))){
+            $usuario['USUARI_HorFinDom_b'] = $request->input('USUARI_HorFinDom_b');
+        }
+
+        if(null != ($request->input('USUARI_HorIniFes_b'))){
+            $usuario['USUARI_HorIniFes_b'] = $request->input('USUARI_HorIniFes_b');
+        }
+        if(null != ($request->input('	USUARI_HorFinFes_b'))){
+            $usuario['USUARI_HorFinFes_b'] = $request->input('USUARI_HorFinFes_b');
+        }
+
         $usuario_find = Usuari::where('USUARI_Correo___b', $request->input('USUARI_Correo___b'))->first();
 
         if(null == $usuario_find){
@@ -153,6 +191,7 @@ class UsuariController extends Controller
             'USUARI_Clave_____b' => $request->input('USUARI_Clave_____b'),
             'USUARI_Cargo_____b' => $request->input('USUARI_Cargo_____b'),
         ];
+
         //almacena la foto
         if($logo = $request->file('foto_upload')){
             $filename = $logo->getClientOriginalName();
@@ -174,6 +213,43 @@ class UsuariController extends Controller
         if(null != ($request->input('USUARI_HorFinMar_b'))){
             $usuario['USUARI_HorFinMar_b'] = $request->input('USUARI_HorFinMar_b');
         }
+        if(null != ($request->input('USUARI_HorIniMie_b'))){
+            $usuario['USUARI_HorIniMie_b'] = $request->input('USUARI_HorIniMie_b');
+        }
+        if(null != ($request->input('USUARI_HorFinMie_b'))){
+            $usuario['USUARI_HorFinMie_b'] = $request->input('USUARI_HorFinMie_b');
+        }
+        if(null != ($request->input('USUARI_HorIniJue_b'))){
+            $usuario['USUARI_HorIniJue_b'] = $request->input('USUARI_HorIniJue_b');
+        }
+        if(null != ($request->input('USUARI_HorFinJue_b'))){
+            $usuario['USUARI_HorFinJue_b'] = $request->input('USUARI_HorFinJue_b');
+        }
+        if(null != ($request->input('USUARI_HorIniVie_b'))){
+            $usuario['USUARI_HorIniVie_b'] = $request->input('USUARI_HorIniVie_b');
+        }
+        if(null != ($request->input('USUARI_HorFinVie_b'))){
+            $usuario['USUARI_HorFinVie_b'] = $request->input('USUARI_HorFinVie_b');
+        }
+        if(null != ($request->input('USUARI_HorIniSab_b'))){
+            $usuario['USUARI_HorIniSab_b'] = $request->input('USUARI_HorIniSab_b');
+        }
+        if(null != ($request->input('USUARI_HorFinVie_b'))){
+            $usuario['USUARI_HorFinSab_b'] = $request->input('USUARI_HorFinSab_b');
+        }
+        if(null != ($request->input('USUARI_HorIniDom_b'))){
+            $usuario['USUARI_HorIniDom_b'] = $request->input('USUARI_HorIniDom_b');
+        }
+        if(null != ($request->input('USUARI_HorFinDom_b'))){
+            $usuario['USUARI_HorFinDom_b'] = $request->input('USUARI_HorFinDom_b');
+        }
+        if(null != ($request->input('USUARI_HorIniFes_b'))){
+            $usuario['USUARI_HorIniFes_b'] = $request->input('USUARI_HorIniFes_b');
+        }
+        if(null != ($request->input('USUARI_HorFinFes_b'))){
+            $usuario['USUARI_HorFinFes_b'] = $request->input('USUARI_HorFinFes_b');
+        }
+
         $usuario_find = Usuari::where('USUARI_Correo___b', $request->input('USUARI_Correo___b'))->first();
 
         if(null !== $usuario_find){

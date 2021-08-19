@@ -64,13 +64,13 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="USUARI_HorIniLun_b">Horario inicio</label>
-                            <input type="time" name="USUARI_HorIniLun_b" id="USUARI_HorIniLun_b" class="form-control">
+                            <input type="time" name="USUARI_HorIniLun_b" id="USUARI_HorIniLun_b" class="form-control" value="{{$usuario->USUARI_HorIniLun_b ?? ''}}" >
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="USUARI_HorFinLun_b">Horario fin</label>
-                            <input type="time" name="USUARI_HorFinLun_b" id="USUARI_HorFinLun_b" class="form-control">
+                            <input type="time" name="USUARI_HorFinLun_b" id="USUARI_HorFinLun_b" class="form-control" value="{{$usuario->USUARI_HorFinLun_b ?? ''}}">
                         </div>
                     </div>
                     <div class="col-md-12">
@@ -79,13 +79,13 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="USUARI_HorIniMar_b">Horario inicio</label>
-                            <input type="time" name="USUARI_HorIniMar_b" id="USUARI_HorIniMar_b" class="form-control">
+                            <input type="time" name="USUARI_HorIniMar_b" id="USUARI_HorIniMar_b" class="form-control" value="{{$usuario->USUARI_HorIniMar_b ?? ''}}" >
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="USUARI_HorFinMar_b">Horario fin</label>
-                            <input type="time" name="USUARI_HorFinMar_b" id="USUARI_HorFinMar_b" class="form-control">
+                            <input type="time" name="USUARI_HorFinMar_b" id="USUARI_HorFinMar_b" class="form-control" value="{{$usuario->USUARI_HorFinMar_b ?? ''}}">
                         </div>
                     </div>
                     <div class="col-md-12">
@@ -94,13 +94,13 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="USUARI_HorIniMie_b">Horario inicio</label>
-                            <input type="time" name="USUARI_HorIniMie_b" id="USUARI_HorIniMie_b" class="form-control">
+                            <input type="time" name="USUARI_HorIniMie_b" id="USUARI_HorIniMie_b" class="form-control" value="{{$usuario->USUARI_HorIniMie_b ?? ''}}" >
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="USUARI_HorFinMie_b">Horario fin</label>
-                            <input type="time" name="USUARI_HorFinMie_b" id="USUARI_HorFinMie_b" class="form-control">
+                            <input type="time" name="USUARI_HorFinMie_b" id="USUARI_HorFinMie_b" class="form-control" value="{{$usuario->USUARI_HorFinMie_b ?? ''}}">
                         </div>
                     </div>
                     <div class="col-md-12">
@@ -109,13 +109,13 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="USUARI_HorIniJue_b">Horario inicio</label>
-                            <input type="time" name="USUARI_HorIniJue_b" id="USUARI_HorIniJue_b" class="form-control">
+                            <input type="time" name="USUARI_HorIniJue_b" id="USUARI_HorIniJue_b" class="form-control" value="{{$usuario->USUARI_HorIniJue_b ?? ''}}">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="USUARI_HorFinJue_b">Horario fin</label>
-                            <input type="time" name="USUARI_HorFinJue_b" id="USUARI_HorFinJue_b" class="form-control">
+                            <input type="time" name="USUARI_HorFinJue_b" id="USUARI_HorFinJue_b" class="form-control" value="{{$usuario->USUARI_HorFinJue_b ?? ''}}">
                         </div>
                     </div>
                     <div class="col-md-12">
@@ -124,13 +124,13 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="USUARI_HorIniVie_b">Horario inicio</label>
-                            <input type="time" name="USUARI_HorIniVie_b" id="USUARI_HorIniVie_b" class="form-control">
+                            <input type="time" name="USUARI_HorIniVie_b" id="USUARI_HorIniVie_b" class="form-control" value="{{$usuario->USUARI_HorIniVie_b ?? ''}}" >
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="USUARI_HorFinVie_b">Horario fin</label>
-                            <input type="time" name="USUARI_HorFinVie_b" id="USUARI_HorFinVie_b" class="form-control">
+                            <input type="time" name="USUARI_HorFinVie_b" id="USUARI_HorFinVie_b" class="form-control"  value="{{$usuario->USUARI_HorFinVie_b ?? ''}}" >
                         </div>
                     </div>
                     <div class="col-md-12">
@@ -139,13 +139,13 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="USUARI_HorIniSab_b">Horario inicio</label>
-                            <input type="tiem" name="USUARI_HorIniSab_b" id="USUARI_HorIniSab_b" class="form-control">
+                            <input type="time" name="USUARI_HorIniSab_b" id="USUARI_HorIniSab_b" class="form-control" value="{{$usuario->USUARI_HorIniSab_b ?? ''}}">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="USUARI_HorFinSab_b">Horario fin</label>
-                            <input type="time" name="USUARI_HorFinSab_b" id="USUARI_HorFinSab_b" class="form-control">
+                            <input type="time" name="USUARI_HorFinSab_b" id="USUARI_HorFinSab_b" class="form-control" value="{{$usuario->USUARI_HorFinSab_b ?? ''}}">
                         </div>
                     </div>
                     <div class="col-md-12">
@@ -154,13 +154,13 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="USUARI_HorIniDom_b">Horario inicio</label>
-                            <input type="time" name="USUARI_HorIniDom_b" id="USUARI_HorIniDom_b" class="form-control">
+                            <input type="time" name="USUARI_HorIniDom_b" id="USUARI_HorIniDom_b" class="form-control" value="{{$usuario->USUARI_HorIniDom_b ?? ''}}" >
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="USUARI_HorFinDom_b">Horario fin</label>
-                            <input type="time" name="USUARI_HorFinDom_b" id="USUARI_HorFinDom_b" class="form-control">
+                            <input type="time" name="USUARI_HorFinDom_b" id="USUARI_HorFinDom_b" class="form-control" value="{{$usuario->USUARI_HorFinDom_b ?? ''}}" >
                         </div>
                     </div>
                     <div class="col-md-12">
@@ -169,13 +169,13 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="USUARI_HorIniFes_b">Horario inicio</label>
-                            <input type="time" name="USUARI_HorIniFes_b" id="USUARI_HorIniFes_b" class="form-control">
+                            <input type="time" name="USUARI_HorIniFes_b" id="USUARI_HorIniFes_b" class="form-control" value="{{$usuario->USUARI_HorIniFes_b ?? ''}}" >
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="USUARI_HorFinFes_b">Horario fin</label>
-                            <input type="time" name="USUARI_HorFinFes_b" id="USUARI_HorFinFes_b" class="form-control">
+                            <input type="time" name="USUARI_HorFinFes_b" id="USUARI_HorFinFes_b" class="form-control" value="{{$usuario->USUARI_HorFinFes_b ?? ''}}" >
                         </div>
                     </div>
                 </div>
